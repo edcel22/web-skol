@@ -1,0 +1,62 @@
+html
+    -webkit-text-size-adjust: none
+    -webkit-font-smoothing: subpixel-antialiased
+    backface-visibility: hidden
+
+body
+    overflow-x: hidden
+    background-color: $gray_v2
+    &.client_side
+    &.no_click
+        pointer-events: none
+    &.no_scroll
+        overflow-y: hidden
+
+*,
+*:before,
+*:after
+    user-select: none
+    box-sizing: border-box
+    margin: 0
+
+button
+    outline: none
+
+input,
+input:before,
+input:after,
+textarea,
+textarea:before,
+textarea:after,
+select,
+select:before,
+select:after
+    user-select: initial
+
+a
+    text-decoration: none
+
+h1,
+h2,
+h3,
+h4,
+h5
+    font-weight: normal
+
+img
+    height: auto
+    vertical-align: middle
+
+table
+    width: 100%
+    border-collapse: collapse
+
+.hidden
+    display: none
+
+.none
+    pointer-events: none
+
+svg,
+span
+    vertical-align: middle
